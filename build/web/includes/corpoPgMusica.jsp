@@ -22,10 +22,10 @@
                     out.print("<h5>"+m.getVisualizações()+" Views</h5>");
                     out.print("<div class=\"page-header\"><button class=\"btn btn-inverse botao-download\">Download</button></div>");
                     out.print(m.getLetra());
-                    //out.print("<jsp:include page=\"comentario.jsp\" />");
                 %>
         </ol>
         
+        <jsp:include page="mostraComentarios.jsp" />
         <jsp:include page="comentario.jsp" />
 
 

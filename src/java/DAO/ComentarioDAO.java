@@ -19,7 +19,7 @@ public class ComentarioDAO {
         ArrayList<Comentario> lista = new ArrayList<Comentario>();
 
         MySQL bancoDeDados = new MySQL();
-        String sql = "select * from comentario order by id desc where ID_musica = "+musicaID;
+        String sql = "select * from comentario where ID_musica = "+musicaID+" order by id desc";
 
         ConjuntoResultados linhas = bancoDeDados.executaSelect(sql);
 

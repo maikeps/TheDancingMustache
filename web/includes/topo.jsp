@@ -26,7 +26,7 @@
             <input class="inputLogin" type="password" tabindex="1" value="Senha" name="senha" size="30" maxlength="40" required="required" />
             <div class="btn-group"> 
                 <button class="btn btn-inverse">Login</button>
-                
+                <%out.print(session.getAttribute("usuario"));%>
              
           </div>
             </form>

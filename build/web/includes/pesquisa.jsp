@@ -6,18 +6,7 @@
      <div class="span">
         <div class="btn-group meu-grupo-botoes">
 
-            <ul class="nav nav-pills">
-                <li class="dropdown" id="menu1">
-                    <%
-                        out.print("<button class=\"btn btn-inverse dropdown-toggle\" data-toggle=\"dropdown\">" + request.getParameter("tipoPesquisa") + "<span class=\"caret\"></span></button>");
-                    %>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Artistas</a></li>
-                        <li><a href="#">Musicas</a></li>
-                    </ul>
-                </li>
-            </ul>
+
 
         </div>
     </div>

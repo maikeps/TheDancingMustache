@@ -18,11 +18,18 @@
     <div class="offset1 span2">
         <div class="btn-group meu-grupo-botoes div-nova"> 
 
+            
+            
+            <form action="action/loginUsuario.jsp" method="POST">
+            
             <input class="inputLogin" type="text" tabindex="1" value="Usuario" name="usuario" size="30" maxlength="40" required="required" />
             <input class="inputLogin" type="password" tabindex="1" value="Senha" name="senha" size="30" maxlength="40" required="required" />
             <div class="btn-group"> 
-                <a href="#" class="btn btn-inverse">Login</a>
-            </div>
+                <button class="btn btn-inverse">Login</button>
+                
+             
+          </div>
+            </form>
         </div>
     </div> 
 </div>

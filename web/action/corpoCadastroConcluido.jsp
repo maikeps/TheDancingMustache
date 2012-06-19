@@ -10,7 +10,7 @@
 
 
     <div>
-        <center><a href="PerfilUsuario.jsp" class="btn btn-inverse">Clique aqui para voltar</a></center>
+        <center><a href="../index.jsp" class="btn btn-inverse">Clique aqui para voltar</a></center>
     </div>
 
 </div>

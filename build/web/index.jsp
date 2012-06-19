@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<%@page import="util.Util"%>
+<%
+Util.vericaLogin( session, response );
+%><!DOCTYPE html>
 <html lang="pt">
 
     <jsp:include page="includes/head.jsp" />

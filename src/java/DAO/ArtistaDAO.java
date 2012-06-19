@@ -116,6 +116,30 @@ public class ArtistaDAO {
         return lista;
 
     }
-    
+    public static ArrayList<Artista> getResultadoDaPesquisa(String nome) {
+        
+        ArrayList<Artista> lista = new ArrayList<Artista>();
+
+        MySQL bancoDeDados = new MySQL();
+
+        String sql = "select * from artista where Nome like \"%"+nome+"%\"";
+        ConjuntoResultados linhas = bancoDeDados.executaSelect(sql);
+
+        while (linhas.next()) {
+
+            Artista a = new Artista();
+
+            a.setNome(linhas.getString("Nome"));
+            a.setVotos(linhas.getInt("Votos"));
+            a.setId(linhas.getInt("ID"));
+          
+            
+            lista.add(a);
+
+        }
+        return lista;
+
+    }
+
     
 }

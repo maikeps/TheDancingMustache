@@ -18,11 +18,33 @@
     <div class="offset1 span2">
         <div class="btn-group meu-grupo-botoes div-nova"> 
 
-            <input class="inputLogin" type="text" tabindex="1" value="Usuario" name="usuario" size="30" maxlength="40" required="required" />
-            <input class="inputLogin" type="password" tabindex="1" value="Senha" name="senha" size="30" maxlength="40" required="required" />
-            <div class="btn-group"> 
-                <a href="#" class="btn btn-inverse">Login</a>
-            </div>
+            <%
+                String usuario = (String)session.getAttribute("usuario");
+
+                if(usuario.equals(null) || !usuario.equals("admin")){
+                    
+                    response.sendRedirect("../../index.jsp");
+                
+            %>
+            
+                          
+                
+             
+          
+            </form>
+            
+            <%
+                }else{
+            %>
+            
+            <form action="action/logoffAdmin.jsp" method="POST">
+                <button class="btn btn-inverse">Logoff</button>
+            </form>
+            
+            <%
+                }
+            %>
+            
         </div>
     </div> 
 </div>

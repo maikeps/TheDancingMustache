@@ -18,7 +18,13 @@
     <div class="offset1 span2">
         <div class="btn-group meu-grupo-botoes div-nova"> 
 
-            
+            <%
+                String usuario = (String)session.getAttribute("usuario");
+
+                if(usuario.equals(null) || usuario.equals("")){
+                    
+                
+            %>
             
             <form action="action/loginUsuario.jsp" method="POST">
             
@@ -26,10 +32,24 @@
             <input class="inputLogin" type="password" tabindex="1" value="Senha" name="senha" size="30" maxlength="40" required="required" />
             <div class="btn-group"> 
                 <button class="btn btn-inverse">Login</button>
-                <%out.print(session.getAttribute("usuario"));%>
+                
+                
              
           </div>
             </form>
+            
+            <%
+                }else{
+            %>
+            
+            <form action="action/logoffUsuario.jsp" method="POST">
+                <button class="btn btn-inverse">Logoff</button>
+            </form>
+            
+            <%
+                }
+            %>
+            
         </div>
     </div> 
 </div>

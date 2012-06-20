@@ -199,6 +199,11 @@
             margin-top: 6px;
             margin-left: 2px;
         }
+        
+        .comentario{
+            background-color: white;
+            border-color: #737373;
+        }
     </style>
 
 </head>

@@ -2,7 +2,11 @@
 <%@page import="model.Comentario"%>
 <%@page import="java.util.ArrayList"%>
 
-<div class ="page-header">
+</br>
+</br>
+
+
+<div class="well comentario">
 
 <%
 
@@ -11,11 +15,15 @@
 
     ArrayList<Comentario> lista = ComentarioDAO.listaComentarios(id);
     for (Comentario c : lista) {
-    
+        
+        out.print("<div class=\"page-header\">");
+        
         out.print("<h4>" + c.getNome() + "</h4>");
         out.print("<p>" + c.getComentario() + "</p>");
         
-
+        out.append("</div>");
+        
     }
 %>
+
 </div>

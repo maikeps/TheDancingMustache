@@ -24,16 +24,16 @@ public class Util {
             return;
         }
 
-//        if( !(  usuario.equals("admin") 
-//                && senha.equals("54321")   ) ){
-//            try {
-//                //Os dados em sessão são diferentes da senha e do nome de usuário.
-//                //Isso é util quando quisermos mudar a senha e automaticamente impedir qualquer acesso com a senha antiga
-//                vresponse.sendRedirect("/TheDancingMustache/admin/login.jsp");
-//            } catch (IOException ex) {
-//               System.out.print("Erro no redirecionamento");
-//            }            
-//           return;
-//        }
+        if( !(  usuario.equals("admin") 
+                && senha.equals("54321")   ) ){
+            try {
+                //Os dados em sessão são diferentes da senha e do nome de usuário.
+                //Isso é util quando quisermos mudar a senha e automaticamente impedir qualquer acesso com a senha antiga
+                vresponse.sendRedirect("/TheDancingMustache/index.jsp");
+            } catch (IOException ex) {
+               System.out.print("Erro no redirecionamento");
+            }            
+           return;
+        }
     }
 }

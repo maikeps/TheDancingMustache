@@ -10,10 +10,22 @@ String senha = request.getParameter("senha");
 Usuario user = UsuarioDAO.fazLogin(usuario, senha);
 
 if(user.getLogin().equals(usuario) && user.getSenha().equals(senha)){
-    session.setAttribute("usuario", usuario);
-    session.setAttribute("senha", senha);
-    //e redireciona para o index
-    response.sendRedirect("../index.jsp");
+    
+    if (user.getLogin().equals("admin") && user.getSenha().equals("54321")) {
+            session.setAttribute("usuario", usuario);
+            session.setAttribute("senha", senha);
+            
+            response.sendRedirect("../admin/indexAdmin.jsp");
+            
+        } else{
+            session.setAttribute("usuario", usuario);
+            session.setAttribute("senha", senha);
+            
+            response.sendRedirect("../index.jsp");
+  
+        }
+    
+   
 }
 
 //if(usuario.equals("admin") && senha.equals("54321")){

@@ -6,7 +6,7 @@
 
     <br/>
 
-    
+    <div class="span4">
     <ol>
             <%
                     
@@ -24,6 +24,10 @@
                     out.print(m.getLetra());
                 %>
         </ol>
+        
+        </br>
+        
+        <div class="page-header"></div>
         
         <jsp:include page="mostraComentarios.jsp" />
         <jsp:include page="comentario.jsp" />

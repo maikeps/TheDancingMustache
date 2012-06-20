@@ -10,7 +10,7 @@
         <div class="row">
 
              <div class="span6 offset3">
-                <form action="action/login.jsp" method="POST">
+                <form action="action/realizarLogin.jsp" method="POST">
                 <legend>Bem Vindo ao The Dancing Mustache</legend>
 
                 <%

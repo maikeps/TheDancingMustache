@@ -1,8 +1,8 @@
 
-<form action="enviaComentario.jsp" method="POST" >
+<form action="action/enviaComentario.jsp" method="POST" >
     <fieldset>
         
-        <input type="hidden" name="id_novidade" value="<%=request.getParameter("id")%>" />
+        <input type="hidden" name="idMusica" value="<%=request.getParameter("id")%>" />
         
         <legend>Comentarios</legend>
         <div class="control-group">
@@ -14,7 +14,7 @@
         <div class="control-group">
             <label class="control-label" for="Textarea">Comentario</label>
             <div class="controls">
-                <textarea class="input-xlarge" id="comentario" rows="3"></textarea>
+                <textarea class="input-xlarge" id="comentario" name="comentario" rows="3"></textarea>
             </div>
         </div>
         <div>

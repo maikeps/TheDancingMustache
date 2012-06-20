@@ -1,6 +1,6 @@
 <%@page import="util.Util"%>
 <%
-Util.vericaLogin( session, response );
+//Util.vericaLogin( session, response );
 %><!DOCTYPE html>
 <html lang="pt">
 
